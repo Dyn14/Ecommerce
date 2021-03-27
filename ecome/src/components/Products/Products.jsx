@@ -4,16 +4,10 @@ import { Grid } from '@material-ui/core';
 import Product from './Product/Product';
 import useStyles from './styles';
 
-const products = [
-    { id: 1, name: 'Shoes', description: 'Running shoes', price: '$50', image: 'https://cdn.dribbble.com/users/77553/screenshots/11547223/media/595aef422e069d99d014bb713d0f531a.jpg'},
-    { id: 1, name: 'Shoes', description: 'Running shoes', price: '$50', image: 'https://cdn.dribbble.com/users/77553/screenshots/11547223/media/595aef422e069d99d014bb713d0f531a.jpg'},
-    { id: 1, name: 'Shoes', description: 'Running shoes', price: '$50', image: 'https://cdn.dribbble.com/users/77553/screenshots/11547223/media/595aef422e069d99d014bb713d0f531a.jpg'},
-    { id: 1, name: 'Shoes', description: 'Running shoes', price: '$50', image: 'https://cdn.dribbble.com/users/77553/screenshots/11547223/media/595aef422e069d99d014bb713d0f531a.jpg'},
-    { id: 1, name: 'Shoes', description: 'Running shoes', price: '$50', image: 'https://cdn.dribbble.com/users/77553/screenshots/11547223/media/595aef422e069d99d014bb713d0f531a.jpg'},
-    { id: 2, name: 'MacBook', description: 'Portable pc', price: '$1150', image: 'https://cdn.dribbble.com/users/52573/screenshots/9163642/media/f36766075cb4efccb4b3bbb3e0ffa369.jpg'},
-]
 
-const Products = () => {
+
+const Products = ({ products }) => {
+   
     const classes = useStyles();
 
     return (
