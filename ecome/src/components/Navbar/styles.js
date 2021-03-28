@@ -17,6 +17,12 @@ export default makeStyles((theme) => ({
     display: 'flex',
     textDecoration: 'none',
   },
+  shopabout: {
+    flexGrow: 1,
+    alignItems: 'center',
+    display: 'flex',
+    textDecoration: 'none',
+  },
   image: {
     marginRight: '10px',
   },
@@ -28,6 +34,13 @@ export default makeStyles((theme) => ({
   },
   grow: {
     flexGrow: 1,
+    display: 'none',
+  },
+  shop: {
+    cursor: 'pointer',
+    margin: '6px',
+    textDecoration: 'none',
+    color: 'black'
   },
   search: {
     position: 'relative',

@@ -11,7 +11,7 @@ export default makeStyles(() => ({
   cardActions: {
     display: 'flex',
     justifyContent: 'flex-end',
-    background: 'black',
+    border: '1px solid #ccc',
     cursor: 'pointer'
   },
   cardContent: {
