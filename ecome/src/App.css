@@ -1,7 +1,27 @@
 body{
     background-color:blanchedalmond;
+    margin: 0;
+    padding: 0;
 }
 
-.high{
+{
     
+}
+
+.detail{
+    display: flex;
+    margin-top: 50px;
+
+}
+.detailright{
+    margin-top: 70px;
+    padding: 16px;
+}
+
+.imageleft{
+    height: 100vh;
+    width: 70%;
+}
+.detailrightpara{
+    margin-top: 70px;
 }
