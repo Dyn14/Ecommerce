@@ -1,6 +1,6 @@
 import React from "react"
 import {useParams} from "react-router-dom"
-import { Card, CardMedia, CardContent, CardActions, Typography, IconButton } from '@material-ui/core';
+import { Card, CardMedia, CardContent, CardActions, Typography, IconButton, Button } from '@material-ui/core';
 import { AddShoppingCart } from '@material-ui/icons';
 
 
@@ -16,9 +16,16 @@ const {prodId} = useParams();
             <div className='detailright' >
             <Typography dangerouslySetInnerHTML={{ __html: prod.name }} variant="h1" color="textSecondary" />
                   <Typography dangerouslySetInnerHTML={{ __html: prod.description }} variant="body1" color="textSecondary" className='detailrightpara' />
-            </div>
+                  <Typography dangerouslySetInnerHTML={{ __html: prod.price.formatted_with_symbol }} variant="h4" color="textSecondary" className='detailrightpara' />
+          
 
-        
+            <Button className="detailshopbag" onClick={() => props.onAddToCart(prod.id, 1) }>
+                    Add to the bag
+                      <IconButton aria-label="Add to Cart" >
+                            <AddShoppingCart  />
+                        </IconButton>
+                    </Button>
+                    </div>
         </div>
     )
 }
