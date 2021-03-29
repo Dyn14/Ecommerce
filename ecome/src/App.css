@@ -27,12 +27,15 @@ body{
 }
 .detailrightpara{
     margin-top: 70px;
+    color: black;
+}
+.detailtitre{
     color: white;
 }
-
 .detailshopbag{
     width: 100%;
     top: 224px;
+    color: blanchedalmond;
 }
 
 .buttonsize{

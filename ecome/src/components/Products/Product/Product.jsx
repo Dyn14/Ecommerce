@@ -21,7 +21,7 @@ const Product = ({ product, onAddToCart }) => {
                         {product.price.formatted_with_symbol}
                     </Typography>
                     </div>
-                    <Typography dangerouslySetInnerHTML={{ __html: product.description }} variant="body2" color="textSecondary" />
+                    <Typography dangerouslySetInnerHTML={{ __html: product.categories[0].name }} variant="body2" color="textSecondary" />
                     <CardActions disableSpacing className={classes.cardActions} onClick={() => onAddToCart(product.id, 1) }>
                         <IconButton aria-label="Add to Cart" >
                             <AddShoppingCart  className='high' />

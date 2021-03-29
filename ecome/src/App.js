@@ -56,7 +56,7 @@ const App = () => {
         fetchCart();
     }, []);
     
-
+console.log(products);
 
 
     return (
