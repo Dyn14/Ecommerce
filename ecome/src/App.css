@@ -1,9 +1,12 @@
 body{
-    background-color:blanchedalmond;
+    background-color:#114891;
     margin: 0;
     padding: 0;
-}
 
+}
+.high{
+    color: #f50057;
+}
 
 .detail{
     display: flex;
@@ -24,6 +27,7 @@ body{
 }
 .detailrightpara{
     margin-top: 70px;
+    color: white;
 }
 
 .detailshopbag{
@@ -36,7 +40,7 @@ body{
 }
 
 .buttonmain{
-    background-color: blue;
+    
     width: 11rem;
 }
 

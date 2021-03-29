@@ -1,22 +1,61 @@
 import React from 'react';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import { makeStyles } from '@material-ui/core/styles';
+import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container';
 import useStyles from './styles';
+import { Link } from 'react-router-dom'
+
+const images = [
+  
+
+  {
+    url: 'https://cdn.dribbble.com/users/806765/screenshots/14839919/media/66492241b02070158f78877506782c67.png',
+    title: 'Shop',
+    width: '100%',
+    
+  },
+
+];
 
 
-export default function SimpleContainer() {
-    const classes = useStyles();
+
+export default function ButtonBases() {
+  const classes = useStyles();
 
   return (
-    <React.Fragment>
-      <CssBaseline />
-      <Container  >
-        <Typography component="div" style={{ }} className={classes.media}>
-        <img className={classes.img} src='https://cdn.dribbble.com/users/2536313/screenshots/15218108/media/42de775eada717cec0c8cd2688d3f27d.jpg?compress=1&resize=1600x1200' alt="thats a shop"  width="100%"  />
-           
-        </Typography>
-      </Container>
-    </React.Fragment>
+    <Link to='/shop'>
+    <div className={classes.root}>
+      {images.map((image) => (
+        <ButtonBase
+          focusRipple
+          key={image.title}
+          className={classes.image}
+          focusVisibleClassName={classes.focusVisible}
+          style={{
+            width: image.width,
+          }}
+        >
+          <span
+            className={classes.imageSrc}
+            style={{
+              backgroundImage: `url(${image.url})`,
+            }}
+          />
+          <span className={classes.imageBackdrop} />
+          <span className={classes.imageButton}>
+            <Typography
+              component="span"
+              variant="subtitle1"
+              color="inherit"
+              className={classes.imageTitle}
+            >
+              {image.title}
+              <span className={classes.imageMarked} />
+            </Typography>
+          </span>
+        </ButtonBase>
+      ))}
+    </div>
+    </Link>
   );
 }

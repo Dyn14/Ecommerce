@@ -11,11 +11,12 @@ export default makeStyles(() => ({
   cardActions: {
     display: 'flex',
     justifyContent: 'flex-end',
-    border: '1px solid #ccc',
+    border: '1px solid #114891',
     cursor: 'pointer'
   },
   cardContent: {
     display: 'flex',
     justifyContent: 'space-between',
+    
   },
 }));

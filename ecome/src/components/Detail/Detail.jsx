@@ -42,20 +42,21 @@ const {prodId} = useParams();
         <div className="detail">
             <img src={prod.media.source} alt={prod.name} className='imageleft' />
             <div className='detailright' >
-            <Typography dangerouslySetInnerHTML={{ __html: prod.name }} variant="h1" color="textSecondary" />
+            <Typography dangerouslySetInnerHTML={{ __html: prod.name }} variant="h1" color="light" />
                   <Typography dangerouslySetInnerHTML={{ __html: prod.description }} variant="body1" color="textSecondary" className='detailrightpara' />
-                  <Typography dangerouslySetInnerHTML={{ __html: prod.price.formatted_with_symbol }} variant="h4" color="textSecondary" className='detailrightpara' />
+                  <Typography dangerouslySetInnerHTML={{ __html: prod.price.formatted_with_symbol }} variant="h4" color="light" className='detailrightpara' />
           
 
 
                   <Grid container direction="column" alignItems="center" className='buttonsize'>
                   <Grid item xs={12} className="buttoncontain" >
-                    <ButtonGroup variant="contained"    ref={anchorRef} aria-label="split button">
-                      <Button onClick={handleClick} className='buttonmain' >Size</Button>
+                    <ButtonGroup variant="contained"     ref={anchorRef} aria-label="split button">
+                      <Button onClick={handleClick}  className='buttonmain' >Size</Button>
                       <Button
                        
                         size="small"
-                        
+                       
+                        color='secondary'
                         aria-controls={open ? 'split-button-menu' : undefined}
                         aria-expanded={open ? 'true' : undefined}
                         aria-label="select merge strategy"

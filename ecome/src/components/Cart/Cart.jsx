@@ -10,7 +10,7 @@ const Cart = ({ cart, handleUpdateToCartQty, handleRemoveToCart, handleEmptyCart
 
     const EmptyCart = () => (
         <Typography variant='subtitle1' > No artcle, make something
-            <Link to="/" className={classes.link}>adding something</Link>!
+            <Link to="/" className={classes.link}>  adding something</Link>!
         </Typography>
     );
 
