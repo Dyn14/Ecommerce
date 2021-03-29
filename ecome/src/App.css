@@ -31,3 +31,25 @@ body{
     top: 224px;
 }
 
+.buttonsize{
+   margin-top: 45px;
+}
+
+.buttonmain{
+    background-color: blue;
+    width: 11rem;
+}
+
+.buttoncontain{
+    width: 100%;
+}
+
+.red{
+    background-color: brown;
+    
+}
+
+.btmenulist{
+    width: 11rem;
+}
+
