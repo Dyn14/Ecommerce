@@ -7,7 +7,7 @@ import PayementFrom from '../PaymentFrom'
 const steps = ['Shipping address', 'Payement details'];
 
 const Checkout = () => {
-    const [activeStep, setActiveStep] = useState(1);
+    const [activeStep, setActiveStep] = useState(0);
     const classes = useStyles();
 
     const Confirmation = () => (
