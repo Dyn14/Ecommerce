@@ -1,7 +1,6 @@
 import React from "react"
 import {useParams} from "react-router-dom"
 import {Typography, IconButton, Button, Grid, ButtonGroup, ClickAwayListener, Grow, Paper, Popper, MenuItem, MenuList  } from '@material-ui/core';
-import { AddShoppingCart } from '@material-ui/icons';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
 const options = ['EU 41', 'EU 42', 'EU 43', 'EU 44', 'EU 45', 'EU 46' ];
