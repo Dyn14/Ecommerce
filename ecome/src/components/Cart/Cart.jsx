@@ -36,7 +36,7 @@ const Cart = ({ cart, handleUpdateToCartQty, handleRemoveToCart, handleEmptyCart
     if(!cart.line_items) return `Loading..`
 
     return (
-        <Container>
+        <Container className={classes.container}>
             <div className={classes.toolbar} />
             <Typography  className={classes.title} variant='h3' gutterBottom >Your Shopping bag</Typography>
             { !cart.line_items.length ? <EmptyCart /> : <FilledCart /> }

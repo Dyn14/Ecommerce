@@ -4,6 +4,9 @@ body{
     padding: 0;
 
 }
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .high{
     color: #f50057;
 }
@@ -35,7 +38,6 @@ body{
 .detailshopbag{
     width: 100%;
     top: 224px;
-    color: blanchedalmond;
 }
 
 .buttonsize{
@@ -60,3 +62,6 @@ body{
     width: 11rem;
 }
 
+.addShopCart{
+    background-color: crimson;
+}

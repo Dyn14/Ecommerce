@@ -100,10 +100,10 @@ const {prodId} = useParams();
 
 
 
-            <Button className="detailshopbag" color="light" onClick={() => props.onAddToCart(prod.id, 1) }>
+            <Button className="detailshopbag"  onClick={() => props.onAddToCart(prod.id, 1) }>
                     Add to the bag
                       <IconButton aria-label="Add to Cart" >
-                            <AddShoppingCart  />
+                        
                         </IconButton>
                     </Button>
                     </div>

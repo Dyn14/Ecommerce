@@ -4,6 +4,7 @@ import { BrowserRouter as Route } from 'react-router-dom';
 import Product from './Product/Product';
 import useStyles from './styles';
 import Detail from '../Detail/Detail';
+import InfoProducts from './InfoProducts/InfoProducts'
 
 
 
@@ -12,6 +13,8 @@ const Products = ({ products, onAddToCart }) => {
 
     return (
         <main className={classes.content}>
+            <InfoProducts />
+            <h1>Limited edition Nike sneakers</h1>
             <div className={classes.toolbar} />
             <Grid container justify="center" spacing={4}>
                 {products.map((product) => (
