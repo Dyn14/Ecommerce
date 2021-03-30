@@ -47,7 +47,7 @@ const Checkout = ({ cart }) => {
     
     const From = () => activeStep === 0 
     ? <AddressFrom checkoutToken={checkoutToken} next={next} /> 
-    : <PayementFrom shippingData={shippingData} checkoutToken={checkoutToken} />
+    : <PayementFrom shippingData={shippingData} checkoutToken={checkoutToken} backStep={backStep} />
         
     return (
         <div>
