@@ -65,3 +65,56 @@ h1{
 .addShopCart{
     background-color: crimson;
 }
+
+/*  /// Ici c'est le Footer  */
+
+footer{
+    width: 100%;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    margin-top: 22px;
+    padding: 80px 0; 
+}
+
+.up{
+    display: flex;
+    justify-content: space-around;
+}
+
+.listfooter ul{
+    margin: 0 14px;
+    color: white;
+}
+
+.listfooter li {
+    margin-top: 17px;
+    font-size: .8rem;
+}
+
+li{
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.listfooter, .iconfooter{
+    margin-top: 30px;
+    display: flex;
+}
+
+.iconfooter ul{
+    display: flex;
+}
+
+.iconfooter li{
+    margin: 5px;
+    font-size: 2rem;
+}
+
+.iconfooter li:hover{
+    color: #114891;
+}
+
+.iconfooter a{
+    color: white;
+}
