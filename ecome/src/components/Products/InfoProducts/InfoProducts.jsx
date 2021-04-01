@@ -32,6 +32,11 @@ const tutorialSteps = [
     label: "Franchement je m'en sort pas mal en vrai haha",
     imgPath:
       "https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60"
+  },
+  {
+    label: "Des shoes edition limited, shop NOW ",
+    imgPath:
+      "https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60"
   }
 ];
 

@@ -7,7 +7,7 @@ const SplitMedia = () => {
             <div className="splitmedia-img"> 
                 <div className="splitmedia-img-two">
                     <h1>About us</h1>
-                    <button>See</button>
+                    <a href="https://purpose.nike.com/" target='_blank'><button>See</button></a>
                 </div>  
                 <div className="splitmedia-img-one"></div>   
             </div>
