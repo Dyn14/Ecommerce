@@ -31,7 +31,7 @@ const Products = ({ products, onAddToCart }) => {
                 ))}
             </Grid>  
             <SplitMedia /> 
-            
+              
         </main>
         <Footer />
         </>

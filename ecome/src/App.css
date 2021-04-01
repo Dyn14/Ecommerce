@@ -157,6 +157,10 @@ li{
     outline: none;
     cursor: pointer;
 }
+.main-media button:hover{
+    background-color: rgba(255, 255, 255, 0.416);
+  
+}
 
 
 /*  ////  Ici c'est splitmedia section image dynamyque */
@@ -184,8 +188,34 @@ li{
     background: url(https://images.unsplash.com/photo-1531734510209-2da4a139a53a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2458&q=80);
     background-size: cover;
     background-position: center;
+    position: relative;
+}
+.splitmedia-img-two h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    bottom: 80px;
+    right: 25px;
+}
+.splitmedia-img-two button{
+    background: white;
+    border: none;
+    padding: 1rem;
+    width: 6rem;
+    border-radius: 25px;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 40px;
+    right: 25px;
+    outline: none;
+    cursor: pointer;
+}
+.splitmedia-img-two button:hover{
+    background-color: rgba(255, 255, 255, 0.616);
 }
 
 .splitmedia h1{
     font-weight: lighter;
+    
 }
