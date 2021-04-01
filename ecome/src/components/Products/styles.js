@@ -5,12 +5,15 @@ export default makeStyles((theme) => ({
   content: {
     flexGrow: 1,
     backgroundColor: theme.palette.background.default,
-    padding: theme.spacing(3),
-    padding: '2px 30px'
+    padding: theme.spacing(2),
+    padding: '3px 30px'
   },
   root: {
     flexGrow: 1,
     maxWidth: '100%',
+  },
+  title: {
+    fontWeight : "lighter"
   },
 
   media: {
