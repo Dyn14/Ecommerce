@@ -30,6 +30,7 @@ export default makeStyles((theme) => ({
     display: 'flex',
     marginTop: '10%',
     width: '100%',
+    color: 'white',
     justifyContent: 'space-between',
   },
 }));

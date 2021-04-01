@@ -1,7 +1,8 @@
 import React from "react"
 import {useParams} from "react-router-dom"
-import {Typography, IconButton, Button, Grid, ButtonGroup, ClickAwayListener, Grow, Paper, Popper, MenuItem, MenuList  } from '@material-ui/core';
+import {Typography, IconButton, Button, Grid, ButtonGroup, Select, ClickAwayListener, Grow, Paper, Popper, MenuItem, MenuList  } from '@material-ui/core';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import { ShoppingCart } from '@material-ui/icons'
 
 const options = ['EU 41', 'EU 42', 'EU 43', 'EU 44', 'EU 45', 'EU 46' ];
 
@@ -9,6 +10,8 @@ function Detail(props) {
 
 const {prodId} = useParams();
   const prod = props.products.find(pro => pro.id === prodId);
+
+
 
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
@@ -34,8 +37,6 @@ const {prodId} = useParams();
 
     setOpen(false);
   };
-
-
     
     return (
         <div className="detail">
@@ -47,15 +48,13 @@ const {prodId} = useParams();
           
 
 
-                  <Grid container direction="column" alignItems="center" className='buttonsize'>
-                  <Grid item xs={12} className="buttoncontain" >
-                    <ButtonGroup variant="contained"     ref={anchorRef} aria-label="split button">
-                      <Button onClick={handleClick}  className='buttonmain' >Size</Button>
+                  <Grid container direction="column"  className='buttonwarper'>
+                  <Grid item xs={12}>
+                    <ButtonGroup variant="contained" color="outlined" ref={anchorRef} aria-label="split button">
+                      <Button onClick={handleClick}>{options[selectedIndex]}</Button>
                       <Button
-                       
+                        color="outlined"
                         size="small"
-                       
-                        color='secondary'
                         aria-controls={open ? 'split-button-menu' : undefined}
                         aria-expanded={open ? 'true' : undefined}
                         aria-label="select merge strategy"
@@ -65,22 +64,21 @@ const {prodId} = useParams();
                         <ArrowDropDownIcon />
                       </Button>
                     </ButtonGroup>
-                    <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal  >
+                    <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
                       {({ TransitionProps, placement }) => (
                         <Grow
-                        
                           {...TransitionProps}
                           style={{
                             transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom',
                           }}
                         >
-                          <Paper >
+                          <Paper>
                             <ClickAwayListener onClickAway={handleClose}>
-                              <MenuList id="split-button-menu" className='btmenulist'>
+                              <MenuList id="split-button-menu">
                                 {options.map((option, index) => (
                                   <MenuItem
                                     key={option}
-                                    
+                                    disabled={index === 2}
                                     selected={index === selectedIndex}
                                     onClick={(event) => handleMenuItemClick(event, index)}
                                   >
@@ -95,19 +93,17 @@ const {prodId} = useParams();
                     </Popper>
                   </Grid>
                 </Grid>
+              
 
 
 
-
-            <Button className="detailshopbag"  onClick={() => props.onAddToCart(prod.id, 1) }>
+            <Button   onClick={() => props.onAddToCart(prod.id, 1) }>
                     Add to the bag
-                      <IconButton aria-label="Add to Cart" >
-                        
+                      <IconButton aria-label="Add to Cart" >                
+                          <ShoppingCart color='secondary' />
                         </IconButton>
                     </Button>
                     </div>
-
-
                    
         </div>
 

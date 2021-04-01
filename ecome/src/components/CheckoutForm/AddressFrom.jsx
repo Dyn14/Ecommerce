@@ -69,7 +69,7 @@ const AddressFrom = ({ checkoutToken, test }) => {
                   </MenuItem>
                 ))}
               </Select>
-            </Grid>
+            </Grid> 
             <Grid item xs={12} sm={6}>
               <InputLabel>Shipping Subdivision</InputLabel>
               <Select value={shippingSubdivision} fullWidth onChange={(e) => setShippingSubdivision(e.target.value)}>
@@ -103,3 +103,6 @@ const AddressFrom = ({ checkoutToken, test }) => {
 };
 
 export default AddressFrom;
+
+
+
