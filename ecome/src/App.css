@@ -14,6 +14,7 @@ h1{
 .detail{
     display: flex;
     margin-top: 50px;
+    
 
 }
 .detailright{
@@ -64,6 +65,24 @@ h1{
 
 .addShopCart{
     background-color: crimson;
+}
+
+@media screen and (max-width: 768px){
+    .detail{
+        display: flex;
+     flex-direction: column;
+    }
+
+    .imageleft{
+        width: 100%;
+        height: 50vh;
+    }
+    .detailtitre{
+        font-size: 47px;
+    }
+  
+
+
 }
 
 /*  /// Ici c'est le Footer  */
@@ -129,6 +148,18 @@ li{
     color: white;
 }
 
+@media screen and (max-width: 768px){
+    .up{
+        display: flex;
+        flex-direction: column;
+    }
+    .listfooter{
+        flex-direction: column;
+        margin: 57px 0;
+    }
+    
+}
+
 /*  //// Main media entete de la page products */
 
 .main-media{
@@ -136,6 +167,7 @@ li{
   height: 100vh;
   background-image: url('https://cdn.dribbble.com/users/118819/screenshots/2342406/nike_intro_d_2.gif');
   background-size: cover;
+  background-position: center;
   margin-bottom: 12px;
   position: relative;
 }
@@ -164,6 +196,17 @@ li{
 .main-media button:hover{
     background-color: rgba(255, 255, 255, 0.416);
   
+}
+
+@media screen and (max-width: 768px){
+    .main-media{
+        height: 70vh;
+        
+    }
+    .main-media h1{
+        font-size: 1.4rem;
+    }
+
 }
 
 
@@ -222,6 +265,22 @@ li{
 
 .splitmedia h1{
     font-weight: lighter;
+    
+}
+
+@media screen and (max-width: 768px){
+    .splitmedia-img{
+        flex-direction: column;
+    }
+
+    .splitmedia-img-one, .splitmedia-img-two{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .splitmedia-img-one{
+        margin-top: 100px;
+    }
     
 }
 

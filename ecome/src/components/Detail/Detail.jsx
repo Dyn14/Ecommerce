@@ -42,7 +42,7 @@ const {prodId} = useParams();
         <div className="detail">
             <img src={prod.media.source} alt={prod.name} className='imageleft' />
             <div className='detailright' >
-            <Typography dangerouslySetInnerHTML={{ __html: prod.name }} variant="h1" color="light" className="detailtitre"/>
+            <Typography dangerouslySetInnerHTML={{ __html: prod.name }} variant="h2" color="light" className="detailtitre"/>
                   <Typography dangerouslySetInnerHTML={{ __html: prod.description }} variant="body1" color="textSecondary" className='detailrightpara' />
                   <Typography dangerouslySetInnerHTML={{ __html: prod.price.formatted_with_symbol }} variant="h4" color="light" className='detailrightpara' />
           

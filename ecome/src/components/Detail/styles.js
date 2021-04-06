@@ -12,10 +12,15 @@ export default makeStyles(() => ({
     display: 'flex',
     justifyContent: 'flex-end',
     border: '1px solid #ccc',
-    cursor: 'pointer'
+    cursor: 'pointer',
+    [theme.breakpoints.up(600 + theme.spacing(2) * 2)]: {
+      display: 'flex',
+      flexDirection: 'column'
+    },
   },
   cardContent: {
     display: 'flex',
     justifyContent: 'space-between',
   },
+  
 }));

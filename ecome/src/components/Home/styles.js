@@ -12,10 +12,10 @@ import { makeStyles } from '@material-ui/core/styles';
     },
     image: {
       position: 'relative',
-      height: 800,
+      height: '100vh',
       [theme.breakpoints.down('xs')]: {
         width: '100% !important', // Overrides inline-style
-        height: 100,
+        height: '100vh',
       },
       '&:hover, &$focusVisible': {
         zIndex: 1,
