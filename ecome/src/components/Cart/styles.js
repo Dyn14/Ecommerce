@@ -4,11 +4,12 @@ export default makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
   title: {
     margin: '4% 0',
-    color: 'white'
+    color: 'white',
+    fontSize: '2.7rem'
     
   },
   container: {
-   padding: '30px 0'
+   padding: '30px 10px'
     
   },
   emptyButton: {
